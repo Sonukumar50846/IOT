@@ -9,7 +9,6 @@ led=2
 led1=3
 led2=4
 
-
 gpio.setup(led,gpio.OUT)
 gpio.setup(led1,gpio.OUT)
 gpio.setup(led2,gpio.OUT)

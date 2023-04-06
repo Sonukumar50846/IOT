@@ -1,10 +1,13 @@
 import RPi.GPIO as GPIO
 import time
+
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(17,GPIO.OUT)
 GPIO.setup(18,GPIO.IN)
 GPIO.setup(2,GPIO.OUT)
+
 stop=0
+
 while True:
     GPIO.output(17,False)
     time.sleep(0.5)
@@ -29,4 +32,4 @@ while True:
         GPIO.output(2,GPIO.HIGH)
     else:
         GPIO.output(2,GPIO.LOW)        
-   # print(f"distance:{distance}")
+    # print(f"distance:{distance}")
